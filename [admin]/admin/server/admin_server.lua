@@ -43,6 +43,7 @@ addEventHandler ( "onResourceStart", _root, function ( resource )
 		end
 		return
 	end
+	print("Start: Admin Resource")
 	_settings = xmlLoadFile ( "conf\\settings.xml" )
 	if ( not _settings ) then
 		_settings = xmlCreateFile ( "conf\\settings.xml", "main" )
